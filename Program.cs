@@ -5,7 +5,7 @@
         b=Double.Parse(Console.ReadLine()); //obter valor da base
         Console.Write("Escreva o valor da altura: ");
         h=Double.Parse(Console.ReadLine()); //obter valor da altura
-        perimetro=2*(h+b); //calculando o perimetro
+        perimetro=2*(h+b); //calculando o perimet
         area=h*b; //calculando a area
         diagonal=Math.Sqrt(Math.Pow(b,2)+Math.Pow(h,2)); //calculando a diagonal
         Console.Write("Perímetro: {0}, Área: {1}, Diagonal: {2:f3}.",perimetro,area,diagonal); //resultado dos cálculos
