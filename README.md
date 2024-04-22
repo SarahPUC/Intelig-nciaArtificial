@@ -1,9 +1,31 @@
+# Exercício de Operadores
+#Utilizando C#
 
-Como funciona a inteligência artificial?
-O funcionamento da inteligência artificial, de maneira simplificada, acontece por meio da coleta e da combinação de um grande volume dados seguido da identificação de determinados padrões nesse conjunto de informações. Com esse processo, que geralmente se dá mediante a utilização de algoritmos pré-programados, o software consegue tomar decisões e realizar tarefas de maneira autônoma.
 
-Existe uma série de diferentes métodos por meio dos quais uma IA pode reproduzir o comportamento humano. Os dois principais são:
+//Faça um programa para ler a base e a altura de um retângulo e mostrar seu perímetro, área e diagonal.
 
-Machine learning: chamado de aprendizado de máquina, é o processo que acontece de maneira automatizada. O reconhecimento e a reprodução de padrões são feitos pela IA com base na sua experiência prévia, adquirida pela utilização de algoritmos. Um dos principais exemplos são os mecanismos de pesquisa na internet.
+class Program {
 
-Deep learning: subcampo do machine learning, utiliza-se de redes neurais (unidades conectadas em rede para a análise de bancos de dados e informações) para emular o cérebro humano.
+    public static void Main(){
+    
+        Double b,h,perimetro,area,diagonal; //definindo as variáveis que serão utilizadas
+        
+        Console.Write("Escreva o valor da base: ");
+        
+        b=Double.Parse(Console.ReadLine()); //obter valor da base
+        
+        Console.Write("Escreva o valor da altura: ");
+        
+        h=Double.Parse(Console.ReadLine()); //obter valor da altura
+        
+        perimetro=2*(h+b); //calculando o perimetro
+        
+        area=h*b; //calculando a area
+        
+        diagonal=Math.Sqrt(Math.Pow(b,2)+Math.Pow(h,2)); //calculando a diagonal
+        
+        Console.Write("Perímetro: {0}, Área: {1}, Diagonal: {2:f3}.",perimetro,area,diagonal); //resultado dos cálculos
+        
+    }
+    
+}
